@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>冒泡排序算法动画</title>
+</head>
+<body>
+  <canvas id="canvas" style="height: 100%">
+    当前浏览器不支持Canvas，请更换浏览器后再试
+  </canvas>
+
+  <script src="js/AlgoVisHelper.js"></script>
+  <script src="js/AlgoFrame.js"></script>
+  <script src="js/BubbleSortData.js"></script>
+  <script src="js/AlgoVisualizer.js"></script>
+  <script type="text/javascript">
+    window.onload = function () {
+      var sceneWidth = 700;
+      var sceneHeight = 300;
+
+      var canvas = document.getElementById('canvas');
+      var g2d = canvas.getContext('2d');
+
+      canvas.width = sceneWidth;
+      canvas.height = sceneHeight+20;
+
+      var N = 50;
+      var visualizer = new AlgoVisualizer(g2d, sceneWidth, sceneHeight, N);
+    }
+  </script>
+</body>
+</html>
