@@ -29,9 +29,6 @@ class AlgoFrame {
             if (i === this.data.currentCompareIndex) {
                 AlgoVisHelper.setColor(this.g2d, AlgoVisHelper.LightBlue);
             }
-            if (i === this.data.currentMinIndex) {
-                AlgoVisHelper.setColor(this.g2d, AlgoVisHelper.Indigo);
-            }
             AlgoVisHelper.fillRectangle(this.g2d, i * w, this.canvasHeight - this.data.get(i) + 20, w - 1, this.data.get(i));
             AlgoVisHelper.setText(this.g2d, this.data.get(i), i * w, this.canvasHeight - this.data.get(i) + 15);
         }
