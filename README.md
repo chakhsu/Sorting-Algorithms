@@ -1,2 +1,2 @@
 # Sorting-Algorithms
-Visual examples of sorting algorithms
+Visual examples of sorting algorithms for JavaScript
