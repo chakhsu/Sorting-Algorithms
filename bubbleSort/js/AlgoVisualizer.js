@@ -22,7 +22,6 @@ class AlgoVisualizer {
         this.setData(0, -1);
 
         for (var i = 0; i < this.data.N(); i++) {
-            this.setData(i, -1);
             for (var j = 0; j < this.data.N() - i - 1; j++) {
                 // 由小到大
                 this.setData(i, j);
