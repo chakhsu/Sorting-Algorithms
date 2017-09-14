@@ -21,7 +21,7 @@ class AlgoFrame {
         var w = this.canvasWidth / this.data.N();
 
         for (var i = 0; i < this.data.N(); i++) {
-            if (i < this.data.orderedIndex) {
+            if (i > this.data.orderedIndex) {
                 AlgoVisHelper.setColor(this.g2d, AlgoVisHelper.Red);
             } else {
                 AlgoVisHelper.setColor(this.g2d, AlgoVisHelper.Grey);

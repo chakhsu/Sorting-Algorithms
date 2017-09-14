@@ -24,13 +24,13 @@ class AlgoVisualizer {
         for (var i = 0; i < this.data.N(); i++) {
             for (var j = 0; j < this.data.N() - i - 1; j++) {
                 // 由小到大
-                this.setData(i, j);
+                this.setData(this.data.N() - i - 1, j);
                 if (this.data.get(j) > this.data.get(j+1)) {
                     this.data.swap(j, j+1);
-                    this.setData(i, j);
+                    this.setData(this.data.N() - i - 1, j);
                 }
             }
-            this.setData(i, j);
+            this.setData(this.data.N() - i - 1, j);
         }
         this.setData(this.data.N(), -1);
         // 渲染数据
