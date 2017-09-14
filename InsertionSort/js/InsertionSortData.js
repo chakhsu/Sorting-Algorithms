@@ -1,4 +1,4 @@
-class BubbleSortData {
+class InsertionSortData {
 
     constructor(N, randomBound) {
 
@@ -33,5 +33,4 @@ class BubbleSortData {
         this.numbers[i] = this.numbers[j];
         this.numbers[j] = t;
     }
-
 }
